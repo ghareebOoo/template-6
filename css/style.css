@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color: hsl(47, 88%, 63%);
+    --secondary-color:hsl(0, 0%, 100%);
+    --thrid-color:hsl(0, 0%, 50%);
+    --four-color:hsl(0, 0%, 7%);
+}
+@media(min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+@media(min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+@media(min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+body{
+    font-family: "Figtree", sans-serif;
+    background-color: var(--main-color);
+}
+.container{
+    background-color: white;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 10px 12px 0px var(--four-color);
+    height: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.image img{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.content h1{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    margin-top: 20px;
+    padding: 4px 8px;
+    width: fit-content;
+    border-radius: 5px;
+}
+.content p{
+    font-weight: 700;
+}
+.information h2{
+    font-size: 20px;
+    color: var(--four-color);
+    font-weight: bold;
+}
+.information h2:hover{
+    cursor: pointer;
+    color: var(--main-color);
+}
+.information p{
+    color: var(--thrid-color);
+    margin-top: 20px;
+}
+.pic{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.pic img{
+    width: 50px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    height: 50px;
+}
+.pic span{
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--four-color);
+}
+.end{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.end p span{
+    color: var(--first-color);
+    transition: 0.5s;
+}
+.end p span:hover{
+    padding-left: 20px;
+    color: var(--four-color);
+}
+.end a{
+    color: var(--first-color);
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.end a:hover{
+    color: var(--four-color);
+}
